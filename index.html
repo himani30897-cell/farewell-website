@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secret Announcement</title>
+<style>
+body{
+    font-family: Arial;
+    text-align:center;
+    padding-top:100px;
+}
+.card{
+    display:none;
+}
+</style>
+</head>
+<body>
+
+<h2>🔒 Secret Announcement</h2>
+<button onclick="showMessage()">Open Secret</button>
+
+<div class="card" id="msg">
+    <h1>🎉 I AM RESIGNING 🎉</h1>
+    <p>Thank you all for the support, learning and memories.</p>
+    <p>I will always cherish my time with this team.</p>
+    <h3>❤️ Himani</h3>
+</div>
+
+<script>
+function showMessage(){
+    let pass = prompt("Enter Password");
+    if(pass==="servicenow"){
+        document.getElementById("msg").style.display="block";
+    }else{
+        alert("Wrong Password");
+    }
+}
+</script>
+
+</body>
+</html>
